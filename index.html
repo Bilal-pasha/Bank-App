@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>BanKApp</title>
+
+</head>
+
+<body>
+    <!-- ! Navbar Section -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="section-1-div">
+                <div style="display: flex; justify-content: center;">
+                    <img src="bank.png" alt="" style="width: 3%;">
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <p style="margin-bottom: 0px;"> <i style="font-weight: 600;">National Bank of <span
+                                style="color: rgb(102, 102, 197); font-size: 20px;"> America</span></i> </p>
+                </div>
+            </div>
+            <nav class="navbar "
+                style=" background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);">
+                <div class="container-fluid Navbar-container" id="Navbar-container">
+                    <a class="navbar-brand" style="color: white; font-weight: 600;" id="label-Welcome">Login to get
+                        Started</a>
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="UserName" aria-label="Search"
+                            id="username">
+                        <input class="form-control me-2" type="search" placeholder="Password" aria-label="Search"
+                            id="password">
+                        <button class="btn btn-outline-light" type="submit" id="btn">SignIn</button>
+                    </form>
+                    <a class="btn btn-primary" id="signup" href="#main">SignUp</a>
+                    <a class="btn btn-danger logout" href="#" id="logout">Log Out</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <section class="main-section" style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);">
+        <div class="container section1" id="section1">
+            <div class="Current-balance">
+                <div>
+                    <h2 style="margin-bottom: 0px;">Current balance</h2>
+                    <p style="margin-bottom: 0px;">As of <span style="color: rgb(106, 106, 206);"
+                            id="dateAndTime"></span></p>
+                </div>
+                <div class="label-balance">
+                    <h1 style="margin-bottom: 0px;">0000$</h1>
+                </div>
+            </div>
+
+            <div style="display: flex;">
+                <div class="col-md-6">
+
+                    <div class="movements"
+                        style=" border: rgb(196, 195, 195) 2px solid; border-radius: 10px; margin-top: 20px;">
+                        <div class="movements-row">
+                            <div class="movements-row-row">
+                                <div class="movements-row-text">
+                                    <button class="movements-type-deposite">Deposit</button>
+                                    <p class="card-text">3 days ago</p>
+                                </div>
+                                <div class="dollar">
+                                    <h2>4000$</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movements-row" style="width: 100%;">
+                            <div class="movements-row-row">
+                                <div class="movements-row-text">
+                                    <button class="movements-type-withdrawal">WithDrawal</button>
+                                    <p class="card-text">3 days ago</p>
+                                </div>
+                                <div class="dollar">
+                                    <h2>-378$</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" style="justify-content: end; ">
+                    <div class="card" style="width: 40rem; height: 10rem; margin: 20px; background-color: #f1b963;">
+                        <div class="card-body">
+                            <h5 class="card-title">Transfer Money</h5>
+                            <div style="display: flex; justify-content: space-between;">
+                                <form action="">
+                                    <input type="text"
+                                        style="padding: 7px 30px; border-radius: 10px; border:rgb(152, 145, 145) 1px solid; outline: none;"
+                                        placeholder="Transfer ID" id="transfer-id">
+                                    <input type="number"
+                                        style="padding: 7px 30px; border-radius: 10px; border:rgb(152, 145, 145) 1px solid;  outline: none;"
+                                        placeholder="Amount" id="transfer-amount">
+                                    <button class="btn btn-light" style="border: white 1px solid;"
+                                        id="transfer-btn-submit">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 40rem; margin: 20px;height: 10rem; background-color: #49beb7;">
+                        <div class="card-body">
+                            <h5 class="card-title">Request Loan</h5>
+                            <div style="display: flex; justify-content: space-between;">
+                                <form action="">
+                                    <input type="number" name="" id="request-loan-input"
+                                        style="padding: 7px 30px; border-radius: 10px; border:rgb(152, 145, 145) 1px solid;  outline: none;"
+                                        placeholder="Amount">
+                                    <button class="btn btn-light" style="border: rgb(153, 183, 203) 2px solid;"
+                                        id="request-loan-btn">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 40rem; margin: 20px; height: 10rem; background-color: red;">
+                        <div class="card-body">
+                            <h5 class="card-title">Close Amount</h5>
+                            <div style="display: flex; justify-content: space-between;">
+                                <form action="">
+                                    <input type="text"
+                                        style="padding: 7px 30px; border-radius: 10px; border:rgb(152, 145, 145) 1px solid;  outline: none;"
+                                        placeholder="Confirm User" id="close-id">
+                                    <input type="number"
+                                        style="padding: 7px 30px; border-radius: 10px; border:rgb(152, 145, 145) 1px solid;  outline: none;"
+                                        placeholder="Confirm Pin" id="close-pin">
+                                    <button class="btn btn-light" style="border: rgb(196, 96, 96) 2px solid;"
+                                        id="close-btn">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8" style="display: flex; justify-content: space-between; padding: 20px 0px;">
+                <p style="font-weight: 500;">In <span style="color: green; margin-left: 5px; font-size: 2rem;"
+                        class="incomes"> 0000$</span></p>
+                <p style="font-weight: 500;">Out <span style="color: red;  margin-left: 5px; font-size: 2rem;"
+                        class="out"> 0000$</span></p>
+                <p style=" font-weight: 500;">Interest <span style="color: green;  margin-left: 5px; font-size: 2rem;"
+                        class="Interest"> 0000$</span></p>
+            </div>
+        </div>
+    </section>
+    <main>
+        <div class="container" id="main" style="padding-bottom: 80px; display: none;">
+            <div class="col-md-12">
+                <div style="display: flex; justify-content: center; padding-top: 5%; margin-bottom: 80px;">
+                    <h1><i> Do you want to <span style="color: rgb(102, 102, 197);"> Create a New Account ?</span></i></h1>
+                </div>
+                <form >
+                    <div class="form-group" style="margin: 20px 0px;">
+                        <label for="exampleInputEmail1">Full Name</label>
+                        <input type="text" class="form-control" id="exampleInputname" aria-describedby="emailHelp"
+                            placeholder="Enter You Full Name">
+                    </div>
+                    <div class="form-group" style="margin: 20px 0px;">
+                        <label for="exampleInputEmail1">Age</label>
+                        <input type="number" class="form-control" id="exampleInputage" aria-describedby="emailHelp"
+                        placeholder="Enter You Age">
+                    </div>
+                    <div class="form-group" style="margin: 20px 0px;">
+                        <label for="exampleInputEmail1">Email Address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp"
+                        placeholder="Enter You Email Address">
+                    </div>
+                    <div class="form-group" style="margin: 20px 0px;">
+                        <label for="exampleInputEmail1">Deposit</label>
+                        <input type="number" class="form-control" id="exampleDeposite" aria-describedby="emailHelp"
+                            placeholder="Enter You Deposite Amount">
+                    </div>
+                    <!-- <div class="form-group" style="margin: 20px 0px;">
+                        <label for="exampleInputEmail1">Deposit</label>
+                        <input type="number" class="form-control" id="exampleDeposite2" aria-describedby="emailHelp"
+                            placeholder="Enter You Deposite Amount">
+                    </div> -->
+                    <div class="form-group" style="margin: 20px 0px;">
+                        <label for="exampleInputEmail1">Interest Rate</label>
+                        <input type="number" class="form-control" id="exampleInterestRate" aria-describedby="emailHelp"
+                            placeholder="Enter Your Interest Rate">
+                    </div>
+                    <div class="form-group" style="margin: 20px 0px;">
+                        <label for="exampleInputPassword1">Pin</label>
+                        <input type="password" class="form-control" id="exampleInputpin" placeholder="Enter Your Pin">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="margin: 20px 0px;" id="create-new-account" >Create A New Account</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

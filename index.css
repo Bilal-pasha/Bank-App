@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.card-body{
+    padding-bottom: 20px;
+}
+input[type="text"] {
+    opacity: 60%;
+    font-weight: 600;
+}
+h5.card-title {
+    font-weight: 700;
+}
+h5.card-title {
+    padding-bottom: 40px;
+}
+.main-section {
+    opacity: 0;
+}
+.movements{
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 60vh;
+}
+.movements-row{
+    width: 100%; 
+    border-bottom: rgb(173, 169, 169) 1px solid;
+}
+.movements-row-row{
+    display: flex; justify-content: space-between; align-items: center; padding: 30px ;
+}
+.movements-row-text{
+    display: flex; padding-left: 30px; align-items: center
+}
+.movements-row-text button{
+    padding: 5px 20px;
+}
+.movements-row-text p{
+    margin-left: 10px;
+}
+.dollar{
+    padding-right: 30px;
+}
+.movements-type-withdrawal{
+    background-color: red;
+    color: white;
+    border-radius: 60px;
+    border: none;
+}
+.movements-type-deposite{
+    background-color: green;
+    color: white;
+    border-radius: 60px;
+    border: none;
+}
+.label-balance{
+    font-size: 2rem;
+    font-weight: 600;
+}
+input[type="number"] {
+    opacity: 60%;
+    font-weight: 600;
+}
+.main-section-image{
+    background-image: url(./dmitry-demidko-eBWzFKahEaU-unsplash.jpg); 
+    height: 70vh; 
+    width: 100%; 
+    background-size: cover;
+}
+.logout{
+    display: none;
+}
+.container-fluid .Navbar-container{
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+}
+.section-1-div{
+    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); 
+        padding: 25px 0px;
+}
+.Current-balance{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
